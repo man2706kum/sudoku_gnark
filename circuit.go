@@ -50,14 +50,48 @@ func (circuit *Circuit) check_solution(api frontend.API) error {
 
 			api.AssertIsDifferent(circuit.Solution[3*i+0][3*j+0], circuit.Solution[3*i+0][3*j+1])
 			api.AssertIsDifferent(circuit.Solution[3*i+0][3*j+0], circuit.Solution[3*i+0][3*j+2])
-
 			api.AssertIsDifferent(circuit.Solution[3*i+0][3*j+0], circuit.Solution[3*i+1][3*j+0])
 			api.AssertIsDifferent(circuit.Solution[3*i+0][3*j+0], circuit.Solution[3*i+1][3*j+1])
 			api.AssertIsDifferent(circuit.Solution[3*i+0][3*j+0], circuit.Solution[3*i+1][3*j+2])
-
 			api.AssertIsDifferent(circuit.Solution[3*i+0][3*j+0], circuit.Solution[3*i+2][3*j+0])
 			api.AssertIsDifferent(circuit.Solution[3*i+0][3*j+0], circuit.Solution[3*i+2][3*j+1])
 			api.AssertIsDifferent(circuit.Solution[3*i+0][3*j+0], circuit.Solution[3*i+2][3*j+2])
+
+			api.AssertIsDifferent(circuit.Solution[3*i+0][3*j+1], circuit.Solution[3*i+0][3*j+2])
+			api.AssertIsDifferent(circuit.Solution[3*i+0][3*j+1], circuit.Solution[3*i+1][3*j+0])
+			api.AssertIsDifferent(circuit.Solution[3*i+0][3*j+1], circuit.Solution[3*i+1][3*j+1])
+			api.AssertIsDifferent(circuit.Solution[3*i+0][3*j+1], circuit.Solution[3*i+1][3*j+2])
+			api.AssertIsDifferent(circuit.Solution[3*i+0][3*j+1], circuit.Solution[3*i+2][3*j+0])
+			api.AssertIsDifferent(circuit.Solution[3*i+0][3*j+1], circuit.Solution[3*i+2][3*j+1])
+			api.AssertIsDifferent(circuit.Solution[3*i+0][3*j+1], circuit.Solution[3*i+2][3*j+2])
+
+			api.AssertIsDifferent(circuit.Solution[3*i+0][3*j+2], circuit.Solution[3*i+1][3*j+0])
+			api.AssertIsDifferent(circuit.Solution[3*i+0][3*j+2], circuit.Solution[3*i+1][3*j+1])
+			api.AssertIsDifferent(circuit.Solution[3*i+0][3*j+2], circuit.Solution[3*i+1][3*j+2])
+			api.AssertIsDifferent(circuit.Solution[3*i+0][3*j+2], circuit.Solution[3*i+2][3*j+0])
+			api.AssertIsDifferent(circuit.Solution[3*i+0][3*j+2], circuit.Solution[3*i+2][3*j+1])
+			api.AssertIsDifferent(circuit.Solution[3*i+0][3*j+2], circuit.Solution[3*i+2][3*j+2])
+
+			api.AssertIsDifferent(circuit.Solution[3*i+1][3*j+0], circuit.Solution[3*i+1][3*j+1])
+			api.AssertIsDifferent(circuit.Solution[3*i+1][3*j+0], circuit.Solution[3*i+1][3*j+2])
+			api.AssertIsDifferent(circuit.Solution[3*i+1][3*j+0], circuit.Solution[3*i+2][3*j+0])
+			api.AssertIsDifferent(circuit.Solution[3*i+1][3*j+0], circuit.Solution[3*i+2][3*j+1])
+			api.AssertIsDifferent(circuit.Solution[3*i+1][3*j+0], circuit.Solution[3*i+2][3*j+2])
+
+			api.AssertIsDifferent(circuit.Solution[3*i+1][3*j+1], circuit.Solution[3*i+1][3*j+2])
+			api.AssertIsDifferent(circuit.Solution[3*i+1][3*j+1], circuit.Solution[3*i+2][3*j+0])
+			api.AssertIsDifferent(circuit.Solution[3*i+1][3*j+1], circuit.Solution[3*i+2][3*j+1])
+			api.AssertIsDifferent(circuit.Solution[3*i+1][3*j+1], circuit.Solution[3*i+2][3*j+2])
+
+			api.AssertIsDifferent(circuit.Solution[3*i+1][3*j+2], circuit.Solution[3*i+2][3*j+0])
+			api.AssertIsDifferent(circuit.Solution[3*i+1][3*j+2], circuit.Solution[3*i+2][3*j+1])
+			api.AssertIsDifferent(circuit.Solution[3*i+1][3*j+2], circuit.Solution[3*i+2][3*j+2])
+
+			api.AssertIsDifferent(circuit.Solution[3*i+2][3*j+0], circuit.Solution[3*i+2][3*j+1])
+			api.AssertIsDifferent(circuit.Solution[3*i+2][3*j+0], circuit.Solution[3*i+2][3*j+2])
+
+			api.AssertIsDifferent(circuit.Solution[3*i+2][3*j+1], circuit.Solution[3*i+2][3*j+2])
+
 		}
 
 	}
